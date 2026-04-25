@@ -1,0 +1,36 @@
+### Test 1: Onboard Customer
+POST http://localhost:8000/chat
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "phone": "9876543210",
+  "budget": 500000,
+  "preferred_location": "Dubai Marina"
+}
+
+###
+
+### Test 2: Onboard Property
+POST http://localhost:8000/chat
+Content-Type: application/json
+
+{
+  "title": "Luxury Sunset Villa",
+  "location": "Dubai Marina",
+  "price": 450000,
+  "area": 1800,
+  "bedrooms": 3,
+  "property_type": "villa"
+}
+
+###
+
+### Test 3: Query Insights
+POST http://localhost:8000/chat
+Content-Type: application/json
+
+{
+  "query": "What are investment opportunities in Dubai Marina?"
+}
